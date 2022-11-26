@@ -38,6 +38,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func updateDateDisplay() {
         self.statusItem.button?.image = self.iconImageForText(text: self.getCurrentDayOfMonth())
+        self.statusItem.button?.image?.isTemplate = true
     }
 
     func iconImageForText(text: String) -> NSImage {
