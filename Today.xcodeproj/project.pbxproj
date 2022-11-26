@@ -9,15 +9,15 @@
 /* Begin PBXBuildFile section */
 		8ECFB52229319EA900F36568 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECFB52129319EA900F36568 /* AppDelegate.swift */; };
 		8ECFB52429319EA900F36568 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8ECFB52329319EA900F36568 /* Assets.xcassets */; };
-		8ECFB52729319EA900F36568 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ECFB52529319EA900F36568 /* MainMenu.xib */; };
+		8ECFB52F29319EBB00F36568 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ECFB52E29319EBB00F36568 /* main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8ECFB51E29319EA900F36568 /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8ECFB52129319EA900F36568 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ECFB52329319EA900F36568 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		8ECFB52629319EA900F36568 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		8ECFB52829319EA900F36568 /* Today.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Today.entitlements; sourceTree = "<group>"; };
+		8ECFB52E29319EBB00F36568 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +52,8 @@
 			children = (
 				8ECFB52129319EA900F36568 /* AppDelegate.swift */,
 				8ECFB52329319EA900F36568 /* Assets.xcassets */,
-				8ECFB52529319EA900F36568 /* MainMenu.xib */,
 				8ECFB52829319EA900F36568 /* Today.entitlements */,
+				8ECFB52E29319EBB00F36568 /* main.swift */,
 			);
 			path = Today;
 			sourceTree = "<group>";
@@ -117,7 +117,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				8ECFB52429319EA900F36568 /* Assets.xcassets in Resources */,
-				8ECFB52729319EA900F36568 /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,22 +127,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ECFB52F29319EBB00F36568 /* main.swift in Sources */,
 				8ECFB52229319EA900F36568 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		8ECFB52529319EA900F36568 /* MainMenu.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8ECFB52629319EA900F36568 /* Base */,
-			);
-			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		8ECFB52929319EA900F36568 /* Debug */ = {
@@ -271,8 +260,8 @@
 				DEVELOPMENT_TEAM = J35HH78X46;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -298,8 +287,8 @@
 				DEVELOPMENT_TEAM = J35HH78X46;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainNibFile = MainMenu;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
