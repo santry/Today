@@ -54,7 +54,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                 ]
             )
             
-            NSColor.black.set()
+            NSColor.white.set()
             NSBezierPath(rect: rect).stroke()
             NSBezierPath(rect: NSRect(x: 0, y: 13, width: 17, height: 4)).fill()
             
